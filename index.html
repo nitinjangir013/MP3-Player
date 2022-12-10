@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mp3 Player Using Js</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+			<div class="main_container">
+				<div class="main_screen_container">
+					<div id="images" class="music_images">
+						<div class="time_audio_container">
+							<div id="currnt_time">00:00</div>
+							<div id="total_time">00:00</div>
+							<div class="volume_container">
+								<div id="volume_line"></div>
+							</div>
+						</div>
+						<div class="screen_r">
+							<input oninput="songValue()" id="range" type="range" min="0" max="100" value="0">
+						</div>
+					</div>
+					<div id="music_list">
+						<div class="song_title">Song List</div>
+            <div onclick="songChange()" class="song_name"><img src="https://s2d2.turboimg.net/sp/f947ebf68ec9bf371ddc3fb415e234e8/00_-_Yeh_Dil_Aashiqana_Front.JPG"> yeh-dil-aashiqana</div>
+						<div onclick="songChange1()" class="song_name"><img src="https://aniportalimages.s3.amazonaws.com/media/details/Screenshot_20220310-223017__01.jpg"> Kuch Baatein</div>
+						<div onclick="songChange2()" class="song_name"><img src="https://images.genius.com/b667e99f1c1a959025c2d0d828c5beee.980x940x1.jpg"> Raataan_Lambiyan</div>
+						<div onclick="songChange3()" class="song_name"><img src="https://a10.gaanacdn.com/images/albums/49/3588849/crop_480x480_1607405239_3588849.jpg"> Nayan</div>
+						<div onclick="songChange4()" class="song_name"><img src="https://c.saavncdn.com/623/Boli-Tujhse-Hindi-2022-20220417053529-500x500.jpg"> Boli Tujhse</div>
+					</div>
+					<div class="music_btns_container">
+						<div class="first_div">
+							<img onclick="replay()" class="replay_btn" src="https://www.svgrepo.com/show/67421/replay.svg">
+							<img onclick="list_music()" class="list_btn" src="https://www.svgrepo.com/show/27133/list.svg">
+						</div>
+						<div class="secound_div">
+							<img onclick="volup()" class="volume_btn shinyBtn" src="https://www.svgrepo.com/show/54574/next.svg">
+						</div>
+						<div class="third_div">
+							<img onclick="pre()" class="back_btn shinyBtn" src="https://www.svgrepo.com/show/54574/next.svg">
+							<div class="play_pause_btn"><img onclick="play1()" class="play_btn" src="https://www.svgrepo.com/show/38645/play.svg"><img onclick="pause1()" class="play_btn " src="https://www.svgrepo.com/show/27508/pause.svg"></div>
+							<img onclick="next()" class="next_btn shinyBtn" src="https://www.svgrepo.com/show/54574/next.svg">
+						</div>
+						<div class="four_div">
+							<img onclick="voldow()" class="volume1_btn shinyBtn" src="https://www.svgrepo.com/show/54574/next.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+      <audio class="audio_p1" src="https://cdn.pagalworld.us/songs/bollywood/YDA 2002 - Yeh Dil Aashiqana.mp3"></audio>
+			<audio class="audio_p1" src="https://www.pagalvvorld.com/wp-content/uploads/2022/03/Kuch-Baatein.mp3"></audio> <!-- controls -->
+		<audio class="audio_p1" src="https://pagalsong.in/uploads/systemuploads/mp3/Shershaah/Raataan Lambiyan - Shershaah 128 Kbps.mp3"></audio>
+	<audio class="audio_p1" src="https://pagalsong.in/uploads/systemuploads/mp3/Nayan - Dhvani Bhanushali/Nayan - Dhvani Bhanushali 128 Kbps.mp3"></audio>
+<audio class="audio_p1" src="https://www.pagalvvorld.com/wp-content/uploads/2022/04/Boli-Tujhse.mp3"></audio>
+</div>
+<script type="text/javascript" src="./assets/js/custom.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
